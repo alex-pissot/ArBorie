@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Trees index{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h1>Trees index</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>PlantingYear</th>
+                    <th>Image</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for tree in trees %}
+                <tr>
+                    <td>{{ tree.id }}</td>
+                    <td>{{ tree.name }}</td>
+                    <td>{{ tree.description }}</td>
+                    <td>{{ tree.plantingYear }}</td>
+                    <td>{{ tree.image }}</td>
+                    <td>
+                        <a href="{{ path('trees_show', {'id': tree.id}) }}">show</a>
+                        <a href="{{ path('trees_edit', {'id': tree.id}) }}">edit</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="6">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ path('trees_new') }}" class="btn btn-success">Ajouter un arbe</a>
+    </div>
+{% endblock %}

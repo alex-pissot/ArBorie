@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Trees{% endblock %}
+
+{% block body %}
+    <h1>Edit Trees</h1>
+
+    {{ include('trees/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('trees_index') }}">back to list</a>
+
+    {{ include('trees/_delete_form.html.twig') }}
+{% endblock %}

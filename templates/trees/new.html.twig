@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Trees{% endblock %}
+
+{% block body %}
+    <h1>Create new Trees</h1>
+
+    {{ include('trees/_form.html.twig') }}
+
+    <a href="{{ path('trees_index') }}">back to list</a>
+{% endblock %}
