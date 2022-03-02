@@ -4,9 +4,13 @@ namespace App\Controller\Admin;
 
 use App\Entity\Trees;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use App\Field\VichImageField;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class TreesCrudController extends AbstractCrudController
 {
@@ -21,8 +25,9 @@ class TreesCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             TextEditorField::new('description'),
-            DateField::new('planting_year'),
-
+            IntegerField::new('planting_year'),
+            TextField::new('imageFile')
+                ->setFormType(VichImageType::class),
         ];
     }
 

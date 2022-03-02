@@ -3,9 +3,17 @@
 namespace App\Entity;
 
 use App\Repository\TreesRepository;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+
 
 #[ORM\Entity(repositoryClass: TreesRepository::class)]
+
+/**
+ * @Vich\Uploadable
+ */
 class Trees
 {
     #[ORM\Id]
@@ -22,8 +30,22 @@ class Trees
     #[ORM\Column(type: 'integer', nullable: true)]
     private $plantingYear;
 
-    #[ORM\Column(type: 'string', length: 500, nullable: true)]
+    #[ORM\Column(type: 'string', length: 1000)]
     private $image;
+
+    /**
+     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image")
+     * @var File|null
+     */
+    private $imageFile;
+
+    /**
+     * @ORM\Column(type="datetime")
+     * @var DateTime
+     */
+    private $updatedAt;
+
+
 
     public function getId(): ?int
     {
@@ -65,7 +87,6 @@ class Trees
 
         return $this;
     }
-
     public function getImage(): ?string
     {
         return $this->image;
@@ -77,4 +98,23 @@ class Trees
 
         return $this;
     }
+
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * @param File|null $imageFile
+     * @return $this
+     */
+    public function setImageFile(File $imageFile = null): self
+    {
+        $this->imageFile = $imageFile;
+        if (null !== $imageFile) {
+            $this->updatedAt = new DateTime();
+        }
+        return $this;
+    }
+
 }
