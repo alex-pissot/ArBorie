@@ -4,42 +4,24 @@
 
 {% block body %}
     <div class="container">
+        <h1 class="test">Trees index</h1>
+            <div class="container-trees">
+                {% for tree in trees %}
+                    <div class="box-trees">
+                        <h3>{{ tree.name }}</h3>
+                        <h5>Description :</h5>
+                            <p>{{ tree.description }}</p>
+                        <h5>Année de mise en terre :</h5>
+                            <p>{{ tree.plantingYear }}</p>
+                        <h5>Images :</h5>
+                            <p>{{ tree.image }}</p>
 
-        <h1>Trees index</h1>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>PlantingYear</th>
-                    <th>Image</th>
-                    <th>actions</th>
-                </tr>
-            </thead>
-            <tbody>
-            {% for tree in trees %}
-                <tr>
-                    <td>{{ tree.id }}</td>
-                    <td>{{ tree.name }}</td>
-                    <td>{{ tree.description }}</td>
-                    <td>{{ tree.plantingYear }}</td>
-                    <td>{{ tree.image }}</td>
-                    <td>
-                        <a href="{{ path('trees_show', {'id': tree.id}) }}">show</a>
-                        <a href="{{ path('trees_edit', {'id': tree.id}) }}">edit</a>
-                    </td>
-                </tr>
-            {% else %}
-                <tr>
+                        <button type="button" class="btn-trees btn btn-dark"><a href="{{ path('trees_show', {'id': tree.id}) }}">show</a></button>
+                    </div>
+                {% else %}
                     <td colspan="6">no records found</td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-
-        <a href="{{ path('trees_new') }}" class="btn btn-success">Ajouter un arbe</a>
+                {% endfor %}
+            </div>
     </div>
     <script src="{{ asset('js/menu-tree.js') }}"></script>
 {% endblock %}
