@@ -13,7 +13,7 @@
                     <h5>Année de mise en terre :</h5>
                     <p>{{ tree.plantingYear }}</p>
                     <h5>Images :</h5>
-                    <p>{{ tree.image }}</p>
+                    <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
                 </div>
         </div>
     </div>
