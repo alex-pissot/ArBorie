@@ -3,19 +3,18 @@
 {% block title %}Trees{% endblock %}
 
 {% block body %}
-    <div class="container">
-        <h1 class="test">Trees index</h1>
+    <div class="container-fluid">
         <div class="container-trees">
-                <div class="box-trees">
-                    <h3>{{ tree.name }}</h3>
-                    <h5>Description :</h5>
-                    <p>{{ tree.description }}</p>
-                    <h5>Année de mise en terre :</h5>
-                    <p>{{ tree.plantingYear }}</p>
-                    <h5>Images :</h5>
+                <div class="box-tree-info">
+                    <h2 class="tree-info-headtitle">{{ tree.name }}</h2>
+                    <p class="tree-info-title pb-2 pt-5">Description :</p>
+                    <p class="tree-info-text">{{ tree.description }}</p>
+                    <p class="tree-info-title pb-2 pt-5">Année de mise en terre :</p>
+                    <p class="tree-info-text">{{ tree.plantingYear }}</p>
+                    <p class="tree-info-title pb-2 pt-5">Images :</p>
                     <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
                 </div>
+            <a href="{{ path('trees_index') }}" class="btn btn-success tree-info-back">Retour</a>
         </div>
     </div>
-    <a href="{{ path('trees_index') }}">Retour</a>
 {% endblock %}

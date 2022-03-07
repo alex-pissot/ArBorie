@@ -3,14 +3,22 @@
 {% block title %}Trees index{% endblock %}
 
 {% block body %}
-    <div class="container">
-        <h1 class="test">Trees index</h1>
+    <div class="container-fluid">
+        <h2 class="page-title">Les arbres de La Borie</h2>
             <div class="container-trees">
                 {% for tree in trees %}
                     <div class="box-trees">
-                        <h3>{{ tree.name }}</h3>
-                        <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
-                        <button type="button" class="btn-trees btn btn-dark"><a href="{{ path('trees_show', {'id': tree.id}) }}">show</a></button>
+                        <div class="box-trees-content">
+                            <a href="{{ path('trees_show', {'id': tree.id}) }}">
+                                <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
+                            </a>
+                        </div>
+                        <div class="box-trees-content">
+                            <a href="{{ path('trees_show', {'id': tree.id}) }}">
+                                <h3>{{ tree.name }}</h3>
+                                <p> {{ tree.description }} </p>
+                            </a>
+                        </div>
                     </div>
                 {% else %}
                     <td colspan="6">no records found</td>
