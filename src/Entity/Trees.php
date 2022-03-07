@@ -46,7 +46,6 @@ class Trees
     private $updatedAt;
 
 
-
     public function getId(): ?int
     {
         return $this->id;
@@ -116,5 +115,6 @@ class Trees
         }
         return $this;
     }
+
 
 }

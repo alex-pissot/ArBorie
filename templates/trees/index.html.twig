@@ -9,7 +9,7 @@
                 {% for tree in trees %}
                     <div class="box-trees">
                         <h3>{{ tree.name }}</h3>
-                        <p>{{ tree.image }}</p>
+                        <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
                         <button type="button" class="btn-trees btn btn-dark"><a href="{{ path('trees_show', {'id': tree.id}) }}">show</a></button>
                     </div>
                 {% else %}

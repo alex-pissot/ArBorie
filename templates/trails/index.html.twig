@@ -5,34 +5,12 @@
 {% block body %}
     <div class="container">
         <h1>Trails index</h1>
+        <div id="map"></div>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>actions</th>
-                </tr>
-            </thead>
-            <tbody>
-            {% for trail in trails %}
-                <tr>
-                    <td>{{ trail.id }}</td>
-                    <td>{{ trail.name }}</td>
-                    <td>
-                        <a href="{{ path('trails_show', {'id': trail.id}) }}">show</a>
-                        <a href="{{ path('trails_edit', {'id': trail.id}) }}">edit</a>
-                    </td>
-                </tr>
-            {% else %}
-                <tr>
-                    <td colspan="3">no records found</td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-
-        <a href="{{ path('trails_new') }}" class="btn btn-success">Créer un nouveau thème</a>
     </div>
+    <script src="{{ asset('js/map.js') }}"></script>
     <script src="{{ asset('js/menu-map.js') }}"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
 {% endblock %}

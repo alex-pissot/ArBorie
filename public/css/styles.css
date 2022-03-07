@@ -131,3 +131,6 @@ a {
     text-align: center ;
     margin: auto ;
 }
+
+/* --- MAP --- */
+#map { height: 600px; }
