@@ -3,19 +3,16 @@
 {% block title %}Hello AccueilController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/Webmaster/Projet/Symfony/Arborie/src/Controller/AccueilController.php'|file_link(0) }}">src/Controller/AccueilController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/Webmaster/Projet/Symfony/Arborie/templates/accueil/index.html.twig'|file_link(0) }}">templates/accueil/index.html.twig</a></code></li>
-    </ul>
+<div class="home-header-container">
+    <img src="../assets/img/1136_arbre.jpg" class="home-featured-img">
+</div>
+<div class="container-fluid home-main-content">
+    <h2>La zone forestière de La Borie</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue est et nunc auctor, ut porta magna aliquet. Fusce pellentesque, ipsum a egestas posuere, sem turpis maximus elit, ac bibendum sapien ante vel felis. Duis ultricies at tortor sed gravida. Cras pharetra velit odio, sed tristique nulla egestas quis. Morbi mattis turpis mauris. Nam a orci ac urna vehicula interdum iaculis vitae sem. Curabitur at leo vel orci condimentum tincidunt nec a neque. Maecenas tincidunt mauris et metus commodo, vel rutrum justo convallis. Sed vel arcu pretium, maximus tortor mollis, auctor ex. Duis eget dolor sed elit commodo sollicitudin. Aliquam at mi suscipit, ornare eros ut, ullamcorper elit.</p>
+    <p>Aliquam sed consequat sapien. Cras risus diam, dignissim nec augue interdum, elementum porta turpis. Praesent justo dui, congue in arcu in, condimentum feugiat risus. Donec et rhoncus justo, quis ultrices est. Nullam vitae sollicitudin tellus. Nullam non semper augue. Quisque id elementum est. Pellentesque augue ipsum, tincidunt ut ultricies sit amet, elementum sed velit. Suspendisse potenti. Nam a libero ac mauris varius bibendum et a nisl. Aliquam eget aliquam velit, at cursus erat. Pellentesque finibus, quam sit amet tempus feugiat, nisi ipsum eleifend tortor, eget rutrum sem leo quis eros.</p>
+    <p>Sed at ornare metus. Nam fermentum dui lorem, nec laoreet ante mollis quis. Integer accumsan dignissim diam a congue. Cras eget odio erat. Phasellus eu convallis tellus. Donec faucibus aliquet libero at viverra. Donec id felis condimentum, viverra ante sed, commodo ipsum.</p>
+    <p>Morbi magna lacus, luctus in purus at, blandit ultrices leo. Nullam id laoreet enim. Quisque sit amet dignissim diam. Proin ultrices ipsum quis lacus dignissim hendrerit. Donec non tortor elementum, ultricies erat vitae, sagittis dui. Fusce nec massa venenatis, lacinia ipsum ut, suscipit mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla dolor quam, consectetur vel libero aliquam, posuere pretium massa.</p>
+    <p>Vivamus a pulvinar est. Aliquam euismod dui maximus justo varius tincidunt. Phasellus molestie metus leo, eu finibus lacus posuere cursus. Quisque viverra pharetra lobortis. Nam ornare metus vitae augue molestie placerat. Maecenas vestibulum quam at eleifend congue. Etiam suscipit justo ac magna elementum, a vulputate tortor luctus. Vivamus lacinia, nibh nec fringilla ornare, velit felis rutrum sapien, vitae vestibulum sem nunc quis dui. Phasellus ultricies ipsum sed ligula porttitor luctus. Quisque interdum risus eget lectus accumsan congue. Ut pulvinar ultrices nulla eu porta.</p>
 </div>
 <script src="{{ asset('js/menu-home.js') }}"></script>
 {% endblock %}

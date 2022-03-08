@@ -1,12 +1,15 @@
 /* --- Global ---*/
 
 body {
-    background-color: #eff2f1;
+    background-color: #f5f5f5;
     margin-bottom: 13em;
 }
 p, a, h2 {
     font-family: 'Open Sans', sans-serif;
     color: rgb(83, 83, 83);
+}
+p {
+    font-size: 2.5em;
 }
 a {
     text-decoration: none;
@@ -25,6 +28,7 @@ a {
 }
 .header-container {
     background-color: #618e2b;
+    border-bottom: 2px solid #ffffff;
 }
 h1.header-title {
     font-family: 'Open Sans', sans-serif;
@@ -37,6 +41,7 @@ h1.header-title {
 
 .nav {
     background-color: #ffffff;
+    border-top: 2px solid rgb(197, 197, 197);
 }
 .img-menu {
     width: 60%;
@@ -123,6 +128,25 @@ h1.header-title {
     color: #618e2b;
 }
 
+/* --- Page home ---*/
+
+.home-featured-img {
+    width: 100%;
+}
+.home-main-content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4.5em;
+}
+.home-main-content h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.home-main-content p {
+    padding: 0.5em 0;
+}
+
 /* --- Page trees --- */
 
 .container-trees {
@@ -153,6 +177,7 @@ h1.header-title {
     font-size: 3.3em;
 }
 /* -- Fiche tree -- */
+
 .box-tree-info {
     display: flex;
     flex-direction: column;
