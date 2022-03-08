@@ -209,6 +209,12 @@ h1.header-title {
     width: 50%;
     margin: 0 auto;
 }
+.tree-featured-image {
+    max-width: 250px;
+}
+.trees-show-img {
+    max-width: 100%;
+}
 
 /* --- MAP --- */
 
