@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    /* ---- Map---- */
+    /* ---- Map ---- */
+
     var map = L.map('map').setView([45.835228, 1.237753], 17.4);
 
     var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
@@ -12,7 +13,18 @@ $(document).ready(function(){
         style: 'normal'
     });
 
-    GeoportailFrance_orthos.addTo(map)
+    var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+
+    OpenStreetMap_Mapnik.addTo(map
+    )
+
+    L.control.layers({
+        'Carte' : OpenStreetMap_Mapnik,
+        'Satellite' : GeoportailFrance_orthos,
+    }).addTo(map)
 
     /* Custom Marker */
     var marker_icon = L.icon({
