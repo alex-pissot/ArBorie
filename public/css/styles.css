@@ -26,6 +26,9 @@ a {
 .logo {
     height: 100px;
 }
+.app-title-container {
+    text-align: center;
+}
 .header-container {
     background-color: #618e2b;
     border-bottom: 2px solid #ffffff;
