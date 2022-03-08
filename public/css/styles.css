@@ -1,10 +1,25 @@
+/* --- Global ---*/
+
 body {
     background-color: #eff2f1;
-    margin-bottom: 11em;
+    margin-bottom: 13em;
 }
-.nav {
-    background-color: #ffffff;
+p, a, h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(83, 83, 83);
 }
+a {
+    text-decoration: none;
+}
+.page-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* --- Header --- */
+
 .logo {
     height: 100px;
 }
@@ -17,12 +32,11 @@ h1.header-title {
     font-weight: bold;
     color: #ffffff;
 }
-p, a {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(107, 107, 107);
-}
-a {
-    text-decoration: none;
+
+/* --- Navigation --- */
+
+.nav {
+    background-color: #ffffff;
 }
 .img-menu {
     width: 60%;
@@ -109,29 +123,65 @@ a {
     color: #618e2b;
 }
 
-/* Page trees */
+/* --- Page trees --- */
 
 .container-trees {
-    border: 3px solid ;
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
 }
 
 .box-trees {
-    border: 3px solid red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     flex: 1 50%;
     margin: 1em;
-    padding: 1em;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
-.btn-trees,.box-trees h3 {
-    text-align: center ;
-    margin: auto ;
+.box-trees-content {
+    padding: 0 2em;
+}
+.box-trees-content p {
+    font-size: 2em;
+}
+.box-trees h3 {
+    color: #618e2b;
+    font-size: 3.3em;
+}
+/* -- Fiche tree -- */
+.box-tree-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 2em;
+    margin-bottom: 5em;
+    width: 100%;
+}
+.tree-info-headtitle {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #618e2b;
+    text-align: center;
+}
+.tree-info-title {
+    font-size: 3em;
+}
+.tree-info-text {
+    font-size: 2.5em;
+}
+.tree-info-back {
+    text-align: center;
+    font-size: 2.5em;
+    background-color: #618e2b;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /* --- MAP --- */
+
 #map { height: 600px; }
