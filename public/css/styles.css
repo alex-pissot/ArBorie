@@ -184,4 +184,11 @@ h1.header-title {
 
 /* --- MAP --- */
 
-#map { height: 600px; }
+#map {
+    height: 600px;
+}
+
+.img_marker{
+    max-width: 100px;
+    max-height: 100px;
+}
