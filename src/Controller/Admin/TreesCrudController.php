@@ -28,6 +28,12 @@ class TreesCrudController extends AbstractCrudController
             IntegerField::new('planting_year'),
             TextField::new('imageFile')
                 ->setFormType(VichImageType::class),
+            TextField::new('imageFile_2')
+                ->setFormType(VichImageType::class),
+            TextField::new('imageFile_3')
+                ->setFormType(VichImageType::class),
+            TextField::new('imageFile_4')
+                ->setFormType(VichImageType::class),
         ];
     }
 

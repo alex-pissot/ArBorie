@@ -13,6 +13,12 @@
                     <p class="tree-info-text">{{ tree.plantingYear }}</p>
                     <p class="tree-info-title pb-2 pt-5">Images :</p>
                     <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
+                    <p class="tree-info-title pb-2 pt-5">Images 2 :</p>
+                    <img src="{{ vich_uploader_asset(tree,'imageFile_2') }}">
+                    <p class="tree-info-title pb-2 pt-5">Images 3 :</p>
+                    <img src="{{ vich_uploader_asset(tree,'imageFile_3') }}">
+                    <p class="tree-info-title pb-2 pt-5">Images 4 :</p>
+                    <img src="{{ vich_uploader_asset(tree,'imageFile_4') }}">
                 </div>
             <a href="{{ path('trees_index') }}" class="btn btn-success tree-info-back">Retour</a>
         </div>

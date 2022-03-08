@@ -45,6 +45,32 @@ class Trees
      */
     private $updatedAt;
 
+    #[ORM\Column(type: 'string', length: 1000, nullable: true)]
+    private $image_2;
+
+    /**
+     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_2")
+     * @var File|null
+     */
+    private $imageFile_2;
+
+    #[ORM\Column(type: 'string', length: 1000, nullable: true)]
+    private $image_3;
+    /**
+     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_2")
+     * @var File|null
+     */
+    private $imageFile_3;
+
+
+    #[ORM\Column(type: 'string', length: 1000, nullable: true)]
+    private $image_4;
+    /**
+     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_2")
+     * @var File|null
+     */
+    private $imageFile_4;
+
 
     public function getId(): ?int
     {
@@ -111,6 +137,95 @@ class Trees
     {
         $this->imageFile = $imageFile;
         if (null !== $imageFile) {
+            $this->updatedAt = new DateTime();
+        }
+        return $this;
+    }
+
+    public function getImage2(): ?string
+    {
+        return $this->image_2;
+    }
+
+    public function setImage2(?string $image_2): self
+    {
+        $this->image_2 = $image_2;
+
+        return $this;
+    }
+
+    public function getImageFile2(): ?File
+    {
+        return $this->imageFile_2;
+    }
+
+    /**
+     * @param File|null $imageFile_2
+     * @return $this
+     */
+    public function setImageFile2(File $imageFile_2 = null): self
+    {
+        $this->imageFile_2 = $imageFile_2;
+        if (null !== $imageFile_2) {
+            $this->updatedAt = new DateTime();
+        }
+        return $this;
+    }
+
+    public function getImage3(): ?string
+    {
+        return $this->image_3;
+    }
+
+    public function setImage3(?string $image_3): self
+    {
+        $this->image_3 = $image_3;
+
+        return $this;
+    }
+    public function getImageFile3(): ?File
+    {
+        return $this->imageFile_3;
+    }
+
+    /**
+     * @param File|null $imageFile_3
+     * @return $this
+     */
+    public function setImageFile3(File $imageFile_3 = null): self
+    {
+        $this->imageFile_3 = $imageFile_3;
+        if (null !== $imageFile_3) {
+            $this->updatedAt = new DateTime();
+        }
+        return $this;
+    }
+
+
+    public function getImage4(): ?string
+    {
+        return $this->image_4;
+    }
+
+    public function setImage4(?string $image_4): self
+    {
+        $this->image_4 = $image_4;
+
+        return $this;
+    }
+    public function getImageFile4(): ?File
+    {
+        return $this->imageFile_4;
+    }
+
+    /**
+     * @param File|null $imageFile_4
+     * @return $this
+     */
+    public function setImageFile4(File $imageFile_4 = null): self
+    {
+        $this->imageFile_4 = $imageFile_4;
+        if (null !== $imageFile_4) {
             $this->updatedAt = new DateTime();
         }
         return $this;
