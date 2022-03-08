@@ -213,7 +213,8 @@ h1.header-title {
 /* --- MAP --- */
 
 #map {
-    height: 600px;
+    height: 80vh;
+    width: 100%;
 }
 
 .img_marker{
