@@ -13,4 +13,49 @@ $(document).ready(function(){
     });
 
     GeoportailFrance_orthos.addTo(map)
+
+    /* Marker map */
+
+    var marker_0 = L.marker([45.835229, 1.237753]).addTo(map);
+    marker_0.bindPopup("<b>Marker 0</b><br>Hello World !");
+    var marker_1 = L.marker([45.835240, 1.237853]).addTo(map);
+    marker_1.bindPopup("<b>Marker 1</b><br>Hello World !");
+    var marker_2 = L.marker([45.835250, 1.237953]).addTo(map);
+    marker_2.bindPopup("<b>Marker 2</b><br>Hello World !");
+    var marker_3 = L.marker([45.835260, 1.237153]).addTo(map);
+    marker_3.bindPopup("<b>Marker 3</b><br>Hello World !");
+    var marker_4 = L.marker([45.835270, 1.237253]).addTo(map);
+    marker_4.bindPopup("<b>Marker 4</b><br>Hello World !");
+    var marker_5 = L.marker([45.835280, 1.237353]).addTo(map);
+    marker_5.bindPopup("<b>Marker 5</b><br>Hello World !");
+    var marker_6 = L.marker([45.835290, 1.237453]).addTo(map);
+    marker_6.bindPopup("<b>Marker 6</b><br>Hello World !");
+    var marker_7 = L.marker([45.835300, 1.237553]).addTo(map);
+    marker_7.bindPopup("<b>Marker 7</b><br>Hello World !");
+    var marker_8 = L.marker([45.835310, 1.237653]).addTo(map);
+    marker_8.bindPopup("<b>Marker 8</b><br>Hello World !");
+    var marker_9 = L.marker([45.835320, 1.236753]).addTo(map);
+    marker_9.bindPopup("<b>Marker 9</b><br>Hello World !");
+    var marker_10 = L.marker([45.835330, 1.236553]).addTo(map);
+    marker_10.bindPopup("<b>Marker 10</b><br>Hello World !");
+    var marker_11 = L.marker([45.835340, 1.236453]).addTo(map);
+    marker_11.bindPopup("<b>Marker 11</b><br>Hello World !");
+    var marker_12 = L.marker([45.835350, 1.236353]).addTo(map);
+    marker_12.bindPopup("<b>Marker 12</b><br>Hello World !");
+    var marker_13 = L.marker([45.835360, 1.236253]).addTo(map);
+    marker_13.bindPopup(
+        "<img src='' alt='Image arbre'/>" +
+        "<button type=\"button\" class=\"btn-trees btn btn-dark\">" + "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" + "</button>");
+
+
+    /* Trails Map */
+    /* var latlngs = [
+        [45.835340, 1.236453],
+        [45.835740, 1.236853],
+        [45.836040, 1.237153]
+    ];
+
+    var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+    map.fitBounds(polyline.getBounds()); */
+
 });
