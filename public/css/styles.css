@@ -222,8 +222,12 @@ h1.header-title {
     height: 80vh;
     width: 100%;
 }
-
+/* ---- Marker ---- */
 .img_marker{
     max-width: 90%;
-    max-height: 100px;
+    max-height: 1000px;
+}
+
+.btn-tree-map {
+    size: 500px;
 }

@@ -5,7 +5,6 @@ $(document).ready(function(){
 
     var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
         attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
-        bounds: [[-75, -180], [81, 180]],
         minZoom: 6,
         maxZoom: 19,
         apikey: 'choisirgeoportail',
@@ -15,7 +14,6 @@ $(document).ready(function(){
 
     var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
 
     OpenStreetMap_Mapnik.addTo(map
@@ -26,18 +24,18 @@ $(document).ready(function(){
     var marker_icon = L.icon({
         iconUrl: '../assets/img/arbre.png',
         iconSize: [62, 67], // taille de l'icone
-        iconAnchor: [22, 34], // coords de la "pointe" de l'icone
+        iconAnchor: [31, 33], // coords de la "pointe" de l'icone
     });
 
     /* Custom Marker Parking */
     var marker_parking = L.icon({
         iconUrl: '../assets/img/icon_parking.png',
-        iconSize: [62, 67], // taille de l'icone
-        iconAnchor: [22, 34], // coords de la "pointe" de l'icone
+        iconSize: [42, 47], // taille de l'icone
+        iconAnchor: [21, 23], // coords de la "pointe" de l'icone
     });
 
     /* Custom Popup */
-    var customPopup = {'maxWidth': '110','className' : 'custom_popup'}
+    var customPopup = {'maxWidth': '140','className' : 'custom_popup'}
 
     /* Marker map */
 
@@ -71,15 +69,17 @@ $(document).ready(function(){
     /* Marker 13 */
     var custom13 =
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
-        "<button type=\"button\" class=\"btn-trees btn btn-dark\">" +
+        "<button type=\"button\" class=\"btn-dark btn-sm\">" +
             "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
         "</button>"
 
     var marker_13 = L.marker([45.835253, 1.238959],{icon:marker_icon}).addTo(map);
     marker_13.bindPopup(custom13, customPopup);
 
+    /* ---- Trails ---- */
 
-    var points = [
+    /* Trail trees */
+    var points_trees = [
         [45.836249,1.236026],
         [45.836339,1.235957],
         [45.836529,1.235946],
@@ -190,25 +190,70 @@ $(document).ready(function(){
         [45.836107,1.236144],
         [45.836228,1.236034],
     ];
-    var trail = L.polyline(points, {
+    var trail_trees = L.polyline(points_trees, {
         color: 'red',
         weight: 4,
         opacity: 0.5,
         smoothFactor: 1
     }).addTo(map);
 
+    /* Trail birds */
+
+    var points_birds = [
+        [45.839482,1.236026],
+        [45.83956,1.235415],
+        [45.83956,1.234873],
+        [45.839456,1.234524],
+        [45.839232,1.234149],
+        [45.838499,1.233049],
+        [45.837957,1.232266],
+        [45.837318,1.231166],
+        [45.83678,1.230678],
+        [45.835524,1.229691],
+        [45.83459,1.228854],
+        [45.834489,1.229224],
+        [45.834777,1.230072],
+        [45.834975,1.230989],
+        [45.835087,1.23181],
+        [45.835106,1.232759],
+        [45.83499,1.234294],
+        [45.834892,1.235318],
+        [45.834769,1.236584],
+        [45.834623,1.23814],
+        [45.83447,1.239443],
+        [45.834272,1.241117],
+        [45.834074,1.242662],
+        [45.833924,1.24403],
+        [45.83425,1.24447],
+        [45.834986,1.243129],
+        [45.835625,1.243933],
+        [45.836369,1.242598],
+        [45.835748,1.241922],
+        [45.836066,1.240844],
+        [45.83666,1.239937],
+        [45.837142,1.240667],
+        [45.837636,1.239808],
+        [45.838144,1.238784],
+        [45.838906,1.237341],
+        [45.839377,1.236386],
+        [45.839481,1.236021]
+    ];
+    var trails_birds = L.polygon(points_birds,{
+        color: 'purple',
+        weight: 4,
+        opacity: 0.3,
+        smoothFactor: 1
+    }).addTo(map);
+
+
     /* ---- Menu Map ---- */
-
-
 
     L.control.layers({
         'Carte' : OpenStreetMap_Mapnik,
         'Satellite' : GeoportailFrance_orthos,
     },{
-        'Parcours' : trail,
-    }).addTo(map)
-
-
-
+        'Parcours  arbres' : trail_trees,
+        'Zone des oiseaux' : trails_birds,
+    }).addTo(map);
 
 });
