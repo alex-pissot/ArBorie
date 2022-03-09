@@ -3,15 +3,10 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Trees;
-use Doctrine\DBAL\Types\TextType;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
-use App\Field\VichImageField;
-use SebastianBergmann\CodeCoverage\Report\Text;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class TreesCrudController extends AbstractCrudController
