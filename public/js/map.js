@@ -22,9 +22,16 @@ $(document).ready(function(){
     )
 
 
-    /* Custom Marker */
+    /* Custom Marker Trees */
     var marker_icon = L.icon({
         iconUrl: '../assets/img/arbre.png',
+        iconSize: [62, 67], // taille de l'icone
+        iconAnchor: [22, 34], // coords de la "pointe" de l'icone
+    });
+
+    /* Custom Marker Parking */
+    var marker_parking = L.icon({
+        iconUrl: '../assets/img/icon_parking.png',
         iconSize: [62, 67], // taille de l'icone
         iconAnchor: [22, 34], // coords de la "pointe" de l'icone
     });
@@ -34,7 +41,7 @@ $(document).ready(function(){
 
     /* Marker map */
 
-    var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_icon}).addTo(map);
+    var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_parking}).addTo(map);
     marker_0.bindPopup("<b>Marker 0</b><br>Hello World !");
     var marker_1 = L.marker([45.836115, 1.236019],{icon:marker_icon}).addTo(map);
     marker_1.bindPopup("<b>Marker 1</b><br>Hello World !");
