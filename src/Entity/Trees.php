@@ -57,7 +57,7 @@ class Trees
     #[ORM\Column(type: 'string', length: 1000, nullable: true)]
     private $image_3;
     /**
-     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_2")
+     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_3")
      * @var File|null
      */
     private $imageFile_3;
@@ -66,7 +66,7 @@ class Trees
     #[ORM\Column(type: 'string', length: 1000, nullable: true)]
     private $image_4;
     /**
-     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_2")
+     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_4")
      * @var File|null
      */
     private $imageFile_4;

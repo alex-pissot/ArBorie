@@ -26,6 +26,9 @@ a {
 .logo {
     height: 100px;
 }
+.app-title-container {
+    text-align: center;
+}
 .header-container {
     background-color: #618e2b;
     border-bottom: 2px solid #ffffff;
@@ -206,11 +209,18 @@ h1.header-title {
     width: 50%;
     margin: 0 auto;
 }
+.tree-featured-image {
+    max-width: 250px;
+}
+.trees-show-img {
+    max-width: 100%;
+}
 
 /* --- MAP --- */
 
 #map {
-    height: 600px;
+    height: 80vh;
+    width: 100%;
 }
 
 .img_marker{
