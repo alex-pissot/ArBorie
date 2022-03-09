@@ -28,6 +28,7 @@ class AnimalsCrudController extends AbstractCrudController
             TextField::new('name'),
             TextEditorField::new('description'),
             TextField::new('family'),
+            TextField::new('trees_associed'),
             TextField::new('imageFile')
                 ->setFormType(VichImageType::class),
             TextField::new('imageFile_2')
