@@ -29,13 +29,13 @@ class TreesCrudController extends AbstractCrudController
             TextEditorField::new('description'),
             IntegerField::new('planting_year'),
             TextField::new('imageFile')
-                ->setFormType(VichImageType::class),
+                ->setFormType(VichImageType::class)->hideOnIndex(),
             TextField::new('imageFile_2')
-                ->setFormType(VichImageType::class),
+                ->setFormType(VichImageType::class)->hideOnIndex(),
             TextField::new('imageFile_3')
-                ->setFormType(VichImageType::class),
+                ->setFormType(VichImageType::class)->hideOnIndex(),
             TextField::new('imageFile_4')
-                ->setFormType(VichImageType::class),
+                ->setFormType(VichImageType::class)->hideOnIndex(),
         ];
     }
 
