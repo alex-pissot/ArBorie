@@ -2,30 +2,30 @@
 
 namespace App\Repository;
 
-use App\Entity\Image2;
+use App\Entity\Animals;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Image2|null find($id, $lockMode = null, $lockVersion = null)
- * @method Image2|null findOneBy(array $criteria, array $orderBy = null)
- * @method Image2[]    findAll()
- * @method Image2[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Animals|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Animals|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Animals[]    findAll()
+ * @method Animals[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class Image2Repository extends ServiceEntityRepository
+class AnimalsRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Image2::class);
+        parent::__construct($registry, Animals::class);
     }
 
     /**
      * @throws ORMException
      * @throws OptimisticLockException
      */
-    public function add(Image2 $entity, bool $flush = true): void
+    public function add(Animals $entity, bool $flush = true): void
     {
         $this->_em->persist($entity);
         if ($flush) {
@@ -37,7 +37,7 @@ class Image2Repository extends ServiceEntityRepository
      * @throws ORMException
      * @throws OptimisticLockException
      */
-    public function remove(Image2 $entity, bool $flush = true): void
+    public function remove(Animals $entity, bool $flush = true): void
     {
         $this->_em->remove($entity);
         if ($flush) {
@@ -46,15 +46,15 @@ class Image2Repository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Image2[] Returns an array of Image2 objects
+    //  * @return Animals[] Returns an array of Animals objects
     //  */
     /*
     public function findByExampleField($value)
     {
-        return $this->createQueryBuilder('i')
-            ->andWhere('i.exampleField = :val')
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.exampleField = :val')
             ->setParameter('val', $value)
-            ->orderBy('i.id', 'ASC')
+            ->orderBy('a.id', 'ASC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult()
@@ -63,10 +63,10 @@ class Image2Repository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Image2
+    public function findOneBySomeField($value): ?Animals
     {
-        return $this->createQueryBuilder('i')
-            ->andWhere('i.exampleField = :val')
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.exampleField = :val')
             ->setParameter('val', $value)
             ->getQuery()
             ->getOneOrNullResult()

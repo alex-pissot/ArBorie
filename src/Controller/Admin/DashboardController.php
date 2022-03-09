@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 
 use App\Controller\RegistrationController;
+use App\Entity\Animals;
 use App\Entity\Trails;
 use App\Entity\Trees;
 use App\Entity\User;
@@ -32,6 +33,7 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Arbres', 'fas fa-list', Trees::class);
+        yield MenuItem::linkToCrud('Animals', 'fas fa-list', Animals::class);
         yield MenuItem::linkToCrud('Parcours', 'fas fa-list', Trails::class);
         yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-list', User::class);
 

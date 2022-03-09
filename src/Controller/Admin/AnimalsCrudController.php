@@ -2,32 +2,32 @@
 
 namespace App\Controller\Admin;
 
-use App\Entity\Trees;
-use Doctrine\DBAL\Types\TextType;
+use App\Entity\Animals;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use Doctrine\DBAL\Types\TextType;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use App\Field\VichImageField;
 use SebastianBergmann\CodeCoverage\Report\Text;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
-class TreesCrudController extends AbstractCrudController
+class AnimalsCrudController extends AbstractCrudController
 {
     public static function getEntityFqcn(): string
     {
-        return Trees::class;
+        return Animals::class;
     }
-
 
     public function configureFields(string $pageName): iterable
     {
         return [
             TextField::new('name'),
             TextEditorField::new('description'),
-            IntegerField::new('planting_year'),
+            TextField::new('family'),
             TextField::new('imageFile')
                 ->setFormType(VichImageType::class),
             TextField::new('imageFile_2')
@@ -38,5 +38,4 @@ class TreesCrudController extends AbstractCrudController
                 ->setFormType(VichImageType::class),
         ];
     }
-
 }

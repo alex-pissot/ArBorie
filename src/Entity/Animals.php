@@ -2,39 +2,42 @@
 
 namespace App\Entity;
 
-use App\Repository\TreesRepository;
+use App\Repository\AnimalsRepository;
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
-
-#[ORM\Entity(repositoryClass: TreesRepository::class)]
+#[ORM\Entity(repositoryClass: AnimalsRepository::class)]
 
 /**
  * @Vich\Uploadable
  */
-class Trees
+class Animals
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
     private $id;
 
-    #[ORM\Column(type: 'string', length: 100)]
+    #[ORM\Column(type: 'string', length: 255)]
     private $name;
 
+    #[ORM\Column(type: 'string', length: 500)]
+    private $family;
 
-    #[ORM\Column(type: 'integer', nullable: true)]
-    private $plantingYear;
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    private $trees_associed;
+
+    #[ORM\Column(type: 'text')]
+    private $description;
 
     #[ORM\Column(type: 'string', length: 1000)]
     private $image;
-
     /**
-     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="animals_images", fileNameProperty="image")
      * @var File|null
      */
     private $imageFile;
@@ -47,9 +50,8 @@ class Trees
 
     #[ORM\Column(type: 'string', length: 1000, nullable: true)]
     private $image_2;
-
     /**
-     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_2")
+     * @Vich\UploadableField(mapping="animals_images", fileNameProperty="image_2")
      * @var File|null
      */
     private $imageFile_2;
@@ -57,22 +59,18 @@ class Trees
     #[ORM\Column(type: 'string', length: 1000, nullable: true)]
     private $image_3;
     /**
-     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_3")
+     * @Vich\UploadableField(mapping="animals_images", fileNameProperty="image_3")
      * @var File|null
      */
     private $imageFile_3;
 
-
     #[ORM\Column(type: 'string', length: 1000, nullable: true)]
     private $image_4;
     /**
-     * @Vich\UploadableField(mapping="trees_images", fileNameProperty="image_4")
+     * @Vich\UploadableField(mapping="animals_images", fileNameProperty="image_4")
      * @var File|null
      */
     private $imageFile_4;
-
-    #[ORM\Column(type: 'text')]
-    private $description;
 
 
     public function getId(): ?int
@@ -92,6 +90,30 @@ class Trees
         return $this;
     }
 
+    public function getFamily(): ?string
+    {
+        return $this->family;
+    }
+
+    public function setFamily(string $family): self
+    {
+        $this->family = $family;
+
+        return $this;
+    }
+
+    public function getTreesAssocied(): ?string
+    {
+        return $this->trees_associed;
+    }
+
+    public function setTreesAssocied(?string $trees_associed): self
+    {
+        $this->trees_associed = $trees_associed;
+
+        return $this;
+    }
+
     public function getDescription(): ?string
     {
         return $this->description;
@@ -104,23 +126,12 @@ class Trees
         return $this;
     }
 
-    public function getPlantingYear(): ?int
-    {
-        return $this->plantingYear;
-    }
-
-    public function setPlantingYear(?int $plantingYear): self
-    {
-        $this->plantingYear = $plantingYear;
-
-        return $this;
-    }
     public function getImage(): ?string
     {
         return $this->image;
     }
 
-    public function setImage(?string $image): self
+    public function setImage(string $image): self
     {
         $this->image = $image;
 
@@ -144,6 +155,7 @@ class Trees
         }
         return $this;
     }
+
 
     public function getImage2(): ?string
     {
@@ -186,6 +198,7 @@ class Trees
 
         return $this;
     }
+
     public function getImageFile3(): ?File
     {
         return $this->imageFile_3;
@@ -204,7 +217,6 @@ class Trees
         return $this;
     }
 
-
     public function getImage4(): ?string
     {
         return $this->image_4;
@@ -216,6 +228,7 @@ class Trees
 
         return $this;
     }
+
     public function getImageFile4(): ?File
     {
         return $this->imageFile_4;
@@ -233,5 +246,4 @@ class Trees
         }
         return $this;
     }
-
 }
