@@ -21,10 +21,6 @@ $(document).ready(function(){
     OpenStreetMap_Mapnik.addTo(map
     )
 
-    L.control.layers({
-        'Carte' : OpenStreetMap_Mapnik,
-        'Satellite' : GeoportailFrance_orthos,
-    }).addTo(map)
 
     /* Custom Marker */
     var marker_icon = L.icon({
@@ -72,7 +68,20 @@ $(document).ready(function(){
             "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
         "</button>"
 
-    var marker_13 = L.marker([45.835360, 1.236253],{icon:marker_icon}).addTo(map).bindPopup(custom13, customPopup);
+    var marker_13 = L.marker([45.835360, 1.236253],{icon:marker_icon}).addTo(map);
+    marker_13.bindPopup(custom13, customPopup);
+
+
+
+    /* ---- Menu Map ---- */
+
+
+
+    L.control.layers({
+        'Carte' : OpenStreetMap_Mapnik,
+        'Satellite' : GeoportailFrance_orthos,
+    }).addTo(map)
+
 
 
     /* Trails Map */
