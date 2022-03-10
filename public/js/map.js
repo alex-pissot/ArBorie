@@ -70,7 +70,7 @@ $(document).ready(function(){
     var custom13 =
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
         "<button type=\"button\" class=\"btn-dark btn-sm\">" +
-            "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+            "<a href='http://localhost:8000/trees/2' target='_blank'>En savoir plus...</a>" +
         "</button>"
 
     var marker_13 = L.marker([45.835253, 1.238959],{icon:marker_icon}).addTo(map);
