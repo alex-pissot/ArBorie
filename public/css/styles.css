@@ -101,7 +101,7 @@ h1.header-title {
 }
 
 .home-active {
-    background-image: url(../assets/img/home.png);
+    background-image: url(../assets/img/home_degrade.png);
 }
 .home-txt-active {
     color: #618e2b;
