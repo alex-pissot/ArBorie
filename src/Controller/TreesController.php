@@ -22,7 +22,7 @@ class TreesController extends AbstractController
         ]);
     }
 
-    #[Route('/new', name: 'trees_new', methods: ['GET', 'POST'])]
+    /*#[Route('/new', name: 'trees_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $tree = new Trees();
@@ -40,7 +40,7 @@ class TreesController extends AbstractController
             'tree' => $tree,
             'form' => $form,
         ]);
-    }
+    }*/
 
     #[Route('/{id}', name: 'trees_show', methods: ['GET'])]
     public function show(Trees $tree): Response
@@ -50,7 +50,7 @@ class TreesController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}/edit', name: 'trees_edit', methods: ['GET', 'POST'])]
+    /*#[Route('/{id}/edit', name: 'trees_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Trees $tree, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(TreesType::class, $tree);
@@ -66,9 +66,9 @@ class TreesController extends AbstractController
             'tree' => $tree,
             'form' => $form,
         ]);
-    }
+    }*/
 
-    #[Route('/{id}', name: 'trees_delete', methods: ['POST'])]
+    /*#[Route('/{id}', name: 'trees_delete', methods: ['POST'])]
     public function delete(Request $request, Trees $tree, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$tree->getId(), $request->request->get('_token'))) {
@@ -77,5 +77,5 @@ class TreesController extends AbstractController
         }
 
         return $this->redirectToRoute('trees_index', [], Response::HTTP_SEE_OTHER);
-    }
+    }*/
 }
