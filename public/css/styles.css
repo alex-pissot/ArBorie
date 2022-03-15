@@ -80,6 +80,13 @@ h1.header-title {
     background-position: center;
     background-repeat: no-repeat;
 }
+.menu-animal-container {
+    height: 130px;
+    background-image: url(../assets/img/animal_gris.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .menu-camera-container {
     height: 110px;
     background-image: url(../assets/img/camera_gris.png);
@@ -116,6 +123,12 @@ h1.header-title {
     background-image: url(../assets/img/arbre.png);
 }
 .tree-txt-active {
+    color: #618e2b;
+}
+.animal-active {
+    background-image: url(../assets/img/animal.png);
+}
+.animal-txt-active {
     color: #618e2b;
 }
 .camera-active {
@@ -213,6 +226,72 @@ h1.header-title {
     max-width: 250px;
 }
 .trees-show-img {
+    max-width: 100%;
+}
+
+/* --- Page animals --- */
+
+.container-animals {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.box-animals {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: 1 50%;
+    margin: 1em;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.box-animals-content {
+    padding: 0 2em;
+}
+.box-animals-content p {
+    font-size: 2em;
+}
+.box-animals h3 {
+    color: #618e2b;
+    font-size: 3.3em;
+}
+/* -- Fiche animal -- */
+
+.box-animal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 2em;
+    margin-bottom: 5em;
+    width: 100%;
+}
+.animal-info-headtitle {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #618e2b;
+    text-align: center;
+}
+.animal-info-title {
+    font-size: 3em;
+}
+.animal-info-text {
+    font-size: 2.5em;
+}
+.animal-info-back {
+    text-align: center;
+    font-size: 2.5em;
+    background-color: #618e2b;
+    width: 50%;
+    margin: 0 auto;
+}
+.animal-featured-image {
+    max-width: 250px;
+}
+.animals-show-img {
     max-width: 100%;
 }
 

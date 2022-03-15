@@ -5,26 +5,26 @@
 {% block body %}
     <div class="container-fluid">
         <h2 class="page-title">Les animaux de La Borie</h2>
-        <div class="container-animals">
-            {% for animal in animals %}
-                <div class="box-animals">
-                    <div class="box-animals-content">
-                        <a href="{{ path('animals_show', {'id': animal.id}) }}">
-                            <img class="animal-featured-image" src="{{ vich_uploader_asset(animal,'imageFile') }}">
-                        </a>
+            <div class="container-animals">
+                {% for animal in animals %}
+                    <div class="box-animals">
+                        <div class="box-animals-content">
+                            <a href="{{ path('animals_show', {'id': animal.id}) }}">
+                                <img class="animal-featured-image" src="{{ vich_uploader_asset(animal,'imageFile') }}">
+                            </a>
+                        </div>
+                        <div class="box-animals-content">
+                            <a href="{{ path('animals_show', {'id': animal.id}) }}">
+                                <h3>{{ animal.name }}</h3>
+                                <h3>{{ animal.family }}</h3>
+                                <p> {{ animal.description }} </p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="box-animals-content">
-                        <a href="{{ path('animals_show', {'id': animal.id}) }}">
-                            <h3>{{ animal.name }}</h3>
-                            <h3>{{ animal.family }}</h3>
-                            <p> {{ animal.description }} </p>
-                        </a>
-                    </div>
-                </div>
-            {% else %}
-                <td colspan="6">no records found</td>
-            {% endfor %}
+                {% else %}
+                    <td colspan="6">no records found</td>
+                {% endfor %}
+            </div>
         </div>
-    </div>
     <script src="{{ asset('js/menu-animal.js') }}"></script>
 {% endblock %}

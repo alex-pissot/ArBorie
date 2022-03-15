@@ -10,10 +10,10 @@ use App\Repository\AnimalsRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-
+#[Route('/animals')]
 class AnimalsController extends AbstractController
 {
-    #[Route('/animals', name: 'app_animals')]
+    #[Route('/', name: 'animals_index', methods: ['GET'])]
     public function index(AnimalsRepository $animalsRepository): Response
     {
         return $this->render('animals/index.html.twig', [

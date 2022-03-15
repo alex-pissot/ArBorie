@@ -11,8 +11,6 @@
                     <p class="animal-info-text">{{ animal.family }}</p>
                     <p class="animal-info-title pb-2 pt-5">Description :</p>
                     <p class="animal-info-text">{{ animal.description }}</p>
-                    <p class="animal-info-title pb-2 pt-5">Arbre associé :</p>
-                    <p class="animal-info-text">{{ animal.trees_associed }}</p>
                     <p class="animal-info-title pb-2 pt-5">Images :</p>
                     <img src="{{ vich_uploader_asset(animal,'imageFile') }}">
                     {% if vich_uploader_asset(animal,'imageFile_2') != null %}
