@@ -87,13 +87,6 @@ h1.header-title {
     background-position: center;
     background-repeat: no-repeat;
 }
-.menu-camera-container {
-    height: 110px;
-    background-image: url(../assets/img/camera_gris.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .menu-contact-container {
     height: 130px;
     background-image: url(../assets/img/mail_gris.png);
@@ -129,12 +122,6 @@ h1.header-title {
     background-image: url(../assets/img/animal.png);
 }
 .animal-txt-active {
-    color: #618e2b;
-}
-.camera-active {
-    background-image: url(../assets/img/camera.png);
-}
-.camera-txt-active {
     color: #618e2b;
 }
 .contact-active {
