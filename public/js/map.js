@@ -17,8 +17,7 @@ $(document).ready(function(){
         maxZoom: 19,
     });
 
-    OpenStreetMap_Mapnik.addTo(map
-    )
+    OpenStreetMap_Mapnik.addTo(map);
 
 
     /* Custom Marker Trees */
@@ -43,7 +42,7 @@ $(document).ready(function(){
     });
 
     /* Custom Popup */
-    var customPopup = {'maxWidth': '140','className' : 'custom_popup'}
+    var customPopup = {'minWidth': '550','className' : 'custom_popup'}
 
     /* Marker trees map */
 
@@ -105,12 +104,14 @@ $(document).ready(function(){
 
     /* Marker 13 */
     var custom13 =
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
-        "<button type=\"button\" class=\"btn-dark btn-sm\">" +
-            "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
-        "</button>"
+        "<div class='div_marker'>"+
+            "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+            "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+                "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+            "</button>"+
+        "</div>"
 
-    var marker_13 = L.marker([45.835253, 1.238959],{icon:marker_icon}).addTo(map);
+    var marker_13 = L.marker([45.835253, 1.238959],{icon:marker_trees}).addTo(map);
     marker_13.bindPopup(custom13, customPopup);
 
     /* ---- Trails ---- */
@@ -286,11 +287,11 @@ $(document).ready(function(){
     /* ---- Menu Map ---- */
 
     L.control.layers({
-        'Carte' : OpenStreetMap_Mapnik,
-        'Satellite' : GeoportailFrance_orthos,
-    },{
-        'Parcours des arbres' : trail_trees,
-        'Zone des oiseaux' : trail_birds,
-    }).addTo(map);
+            'Carte' : OpenStreetMap_Mapnik,
+            'Satellite' : GeoportailFrance_orthos,
+            },{
+            'Parcours des arbres' : trail_trees,
+            'Zone des oiseaux' : trail_birds,
+            }).addTo(map);
 
 });
