@@ -300,12 +300,23 @@ h1.header-title {
     size: 500px;
 }
 
+.div_marker{
+    text-align: center;
+}
+
 .img_marker{
     width: 90%;
 }
 
 .btn_marker{
     width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.btn_marker a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .menu_map{

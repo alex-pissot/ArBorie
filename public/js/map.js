@@ -44,34 +44,190 @@ $(document).ready(function(){
     /* Custom Popup */
     var customPopup = {'minWidth': '550','className' : 'custom_popup'}
 
-    /* Marker trees map */
+    /* ----- Marker trees map ----- */
 
-    var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_parking}).addTo(map);
-    marker_0.bindPopup("<b>Marker 0</b><br>Hello World !");
+    /* Marker 0 */
+    var custom0 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 0</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
+    var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_trees}).addTo(map);
+    marker_0.bindPopup(custom0, customPopup);
+
+    /* Marker 1 */
+    var custom1 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 1</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_1 = L.marker([45.836115, 1.236019],{icon:marker_trees}).addTo(map);
-    marker_1.bindPopup("<b>Marker 1</b><br>Hello World !");
+    marker_1.bindPopup(custom1, customPopup);
+
+    /* Marker 2 */
+    var custom2 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_2 = L.marker([45.837214, 1.235664],{icon:marker_trees}).addTo(map);
-    marker_2.bindPopup("<b>Marker 2</b><br>Hello World !");
+    marker_2.bindPopup(custom2, customPopup);
+
+    /* Marker 3 */
+    var custom3 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_3 = L.marker([45.836623, 1.234835],{icon:marker_trees}).addTo(map);
-    marker_3.bindPopup("<b>Marker 3</b><br>Hello World !");
+    marker_3.bindPopup(custom3, customPopup);
+
+    /* Marker 4 */
+    var custom4 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_4 = L.marker([45.835469, 1.235418],{icon:marker_trees}).addTo(map);
-    marker_4.bindPopup("<b>Marker 4</b><br>Hello World !");
+    marker_4.bindPopup(custom4, customPopup);
+
+    /* Marker 5 */
+    var custom5 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_5 = L.marker([45.835108, 1.236526],{icon:marker_trees}).addTo(map);
-    marker_5.bindPopup("<b>Marker 5</b><br>Hello World !");
+    marker_5.bindPopup(custom5, customPopup);
+
+    /* Marker 6 */
+    var custom6 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_6 = L.marker([45.835273, 1.237122],{icon:marker_trees}).addTo(map);
-    marker_6.bindPopup("<b>Marker 6</b><br>Hello World !");
+    marker_6.bindPopup(custom6, customPopup);
+
+    /* Marker 7 */
+    var custom7 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_7 = L.marker([45.834652, 1.238561],{icon:marker_trees}).addTo(map);
-    marker_7.bindPopup("<b>Marker 7</b><br>Hello World !");
+    marker_7.bindPopup(custom7, customPopup);
+
+    /* Marker 8 */
+    var custom8 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_8 = L.marker([45.834374, 1.242053],{icon:marker_trees}).addTo(map);
-    marker_8.bindPopup("<b>Marker 8</b><br>Hello World !");
+    marker_8.bindPopup(custom8, customPopup);
+
+    /* Marker 9 */
+    var custom9 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_9 = L.marker([45.834145, 1.242884],{icon:marker_trees}).addTo(map);
-    marker_9.bindPopup("<b>Marker 9</b><br>Hello World !");
+    marker_9.bindPopup(custom9, customPopup);
+
+    /* Marker 10 */
+    var custom10 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_10 = L.marker([45.834314, 1.243802],{icon:marker_trees}).addTo(map);
-    marker_10.bindPopup("<b>Marker 10</b><br>Hello World !");
+    marker_10.bindPopup(custom10, customPopup);
+
+    /* Marker 11 */
+    var custom11 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_11 = L.marker([45.834225, 1.244229],{icon:marker_trees}).addTo(map);
-    marker_11.bindPopup("<b>Marker 11</b><br>Hello World !");
+    marker_11.bindPopup(custom11, customPopup);
+
+    /* Marker 12 */
+    var custom12 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_12 = L.marker([45.834391, 1.242701],{icon:marker_trees}).addTo(map);
-    marker_12.bindPopup("<b>Marker 12</b><br>Hello World !");
+    marker_12.bindPopup(custom12, customPopup);
+
+    /* Marker 13 */
+    var custom13 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
+    var marker_13 = L.marker([45.835253, 1.238959],{icon:marker_trees}).addTo(map);
+    marker_13.bindPopup(custom13, customPopup);
+
 
     /* Marker birds map */
     var marker_bird_0 = L.marker([45.838660, 1.234474],{icon:marker_birds}).addTo(map);
@@ -100,19 +256,6 @@ $(document).ready(function(){
     marker_bird_11.bindPopup("<b>Marker 11</b><br>Hello World !");
 
 
-
-
-    /* Marker 13 */
-    var custom13 =
-        "<div class='div_marker'>"+
-            "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
-            "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-                "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
-            "</button>"+
-        "</div>"
-
-    var marker_13 = L.marker([45.835253, 1.238959],{icon:marker_trees}).addTo(map);
-    marker_13.bindPopup(custom13, customPopup);
 
     /* ---- Trails ---- */
 
