@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
         attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
-        minZoom: 6,
+        minZoom: 12,
         maxZoom: 19,
         apikey: 'choisirgeoportail',
         format: 'image/jpeg',
@@ -13,6 +13,7 @@ $(document).ready(function(){
     });
 
     var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        minZoom: 12,
         maxZoom: 19,
     });
 
