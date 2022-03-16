@@ -12,7 +12,7 @@
                     <p class="tree-info-title pb-2 pt-5">Année de mise en terre :</p>
                     <p class="tree-info-text">{{ tree.plantingYear }}</p>
                     <p class="tree-info-title pb-2 pt-5">Images :</p>
-                    <img src="{{ vich_uploader_asset(tree,'imageFile') }}">
+                    <img class="trees-show-img" src="{{ vich_uploader_asset(tree,'imageFile') }}">
                     {% if vich_uploader_asset(tree,'imageFile_2') != null %}
                         <p class="tree-info-title pb-2 pt-5">Images 2 :</p>
                         <img class="trees-show-img" src="{{ vich_uploader_asset(tree,'imageFile_2') }}">

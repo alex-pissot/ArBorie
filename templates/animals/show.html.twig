@@ -12,7 +12,7 @@
                     <p class="animal-info-title pb-2 pt-5">Description :</p>
                     <p class="animal-info-text">{{ animal.description }}</p>
                     <p class="animal-info-title pb-2 pt-5">Images :</p>
-                    <img src="{{ vich_uploader_asset(animal,'imageFile') }}">
+                    <img class="animals-show-img" src="{{ vich_uploader_asset(animal,'imageFile') }}">
                     {% if vich_uploader_asset(animal,'imageFile_2') != null %}
                         <p class="animal-info-title pb-2 pt-5">Images 2 :</p>
                         <img class="animals-show-img" src="{{ vich_uploader_asset(animal,'imageFile_2') }}">

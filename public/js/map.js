@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     /* Custom Marker Trees */
     var marker_trees = L.icon({
-        iconUrl: '../assets/img/arbre.png',
+        iconUrl: '../assets/img/arbre_icon.png',
         iconSize: [62, 67], // taille de l'icone
         iconAnchor: [31, 33], // coords de la "pointe" de l'icone
     });
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     /* Custom Marker Birds */
     var marker_birds = L.icon({
-        iconUrl: '../assets/img/oiseau.png',
+        iconUrl: '../assets/img/bird_icon.png',
         iconSize: [62, 67], // taille de l'icone
         iconAnchor: [21, 23], // coords de la "pointe" de l'icone
     });

@@ -82,7 +82,7 @@ h1.header-title {
 }
 .menu-animal-container {
     height: 130px;
-    background-image: url(../assets/img/animal_gris.png);
+    background-image: url(../assets/img/bird_gris.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ h1.header-title {
     color: #618e2b;
 }
 .animal-active {
-    background-image: url(../assets/img/animal.png);
+    background-image: url(../assets/img/bird.png);
 }
 .animal-txt-active {
     color: #618e2b;
@@ -285,7 +285,7 @@ h1.header-title {
 /* --- MAP --- */
 
 #map {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -317,6 +317,15 @@ h1.header-title {
 .btn_marker a {
     text-decoration: none;
     color: #fff;
+    font-size: 2em;
+}
+.leaflet-popup-close-button {
+    font-size: 4em !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    top: 30px !important;
+    right: 40px !important;
 }
 
 .menu_map{
