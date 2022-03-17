@@ -184,7 +184,7 @@ h1.header-title {
 .box-tree-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin: 1em;
     padding: 2em;
     margin-bottom: 5em;
@@ -214,6 +214,8 @@ h1.header-title {
 }
 .trees-show-img {
     max-width: 100%;
+    padding: 2em 0;
+    margin: 0 auto;
 }
 
 /* --- Page animals --- */
@@ -250,7 +252,7 @@ h1.header-title {
 .box-animal-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin: 1em;
     padding: 2em;
     margin-bottom: 5em;
@@ -280,6 +282,8 @@ h1.header-title {
 }
 .animals-show-img {
     max-width: 100%;
+    padding: 2em 0;
+    margin: 0 auto;
 }
 
 /* --- MAP --- */
@@ -359,12 +363,9 @@ h1.header-title {
     font-size: 2em;
 }
 .leaflet-popup-close-button {
-    font-size: 4em !important;
-}
-
-.leaflet-container a.leaflet-popup-close-button {
-    top: 30px !important;
-    right: 40px !important;
+    font-size: 3em !important;
+    top: 50px !important;
+    right: 100px !important;
 }
 
 .menu_map{
