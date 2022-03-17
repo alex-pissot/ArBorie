@@ -2,7 +2,10 @@
 
 
 {% block body %}
-    <div class="bg-white p-5 contact-form">
+    <div class="container contact-title">
+        <h2>Contactez-nous</h2>
+    </div>
+    <div class="ps-5 pe-5 contact-form">
         <div class="form-group">
             {{ form_start(our_form) }}
             {{ form_row(our_form.fullName, {'attr': {'class': 'form-control'}}) }}
@@ -18,8 +21,8 @@
 
         </div>
 
-        <div class="form-group">
-            <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
+        <div class="form-group submit-container">
+            <input type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
         </div>
         {{ form_end(our_form) }}
     </div>

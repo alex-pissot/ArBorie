@@ -371,3 +371,41 @@ h1.header-title {
 .menu_map{
     width: 250px;
 }
+
+/* --- Contact Page --- */
+
+.contact-title {
+    text-align: center;
+    padding: 3.8em 0;
+}
+
+.contact-title h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.contact-form label {
+    font-size: 3em;
+}
+
+.contact-form input {
+    font-size: 3em;
+}
+
+#contact_message {
+    font-size: 3em !important;
+}
+
+.form-group {
+    padding: 2em 0;
+}
+
+.submit-container {
+    text-align: center;
+    padding-top: 6em;
+}
+
+.submit-container input {
+    background-color: #618e2b;
+    border: unset;
+}
