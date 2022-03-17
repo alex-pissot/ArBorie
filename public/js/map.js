@@ -230,30 +230,162 @@ $(document).ready(function(){
 
 
     /* Marker birds map */
+    /* Marker 0 */
+    var custom_bird_0 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_0 = L.marker([45.838660, 1.234474],{icon:marker_birds}).addTo(map);
-    marker_bird_0.bindPopup("<b>Marker 0</b><br>Hello World !");
+    marker_bird_0.bindPopup(custom_bird_0, customPopup);
+
+    /* Marker 1 */
+    var custom_bird_1 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_1 = L.marker([45.837954, 1.232736],{icon:marker_birds}).addTo(map);
-    marker_bird_1.bindPopup("<b>Marker 1</b><br>Hello World !");
+    marker_bird_1.bindPopup(custom_bird_1, customPopup);
+
+    /* Marker 2 */
+    var custom_bird_2 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_2 = L.marker([45.836186, 1.232371],{icon:marker_birds}).addTo(map);
-    marker_bird_2.bindPopup("<b>Marker 2</b><br>Hello World !");
+    marker_bird_2.bindPopup(custom_bird_2, customPopup);
+
+    /* Marker 3 */
+    var custom_bird_3 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_3 = L.marker([45.835198, 1.234785],{icon:marker_birds}).addTo(map);
-    marker_bird_3.bindPopup("<b>Marker 3</b><br>Hello World !");
+    marker_bird_3.bindPopup(custom_bird_3, customPopup);
+
+    /* Marker 4 */
+    var custom_bird_4 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_4 = L.marker([45.834661, 1.240384],{icon:marker_birds}).addTo(map);
-    marker_bird_4.bindPopup("<b>Marker 4</b><br>Hello World !");
+    marker_bird_4.bindPopup(custom_bird_4, customPopup);
+
+    /* Marker 5 */
+    var custom_bird_5 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_5 = L.marker([45.834376, 1.243417],{icon:marker_birds}).addTo(map);
-    marker_bird_5.bindPopup("<b>Marker 5</b><br>Hello World !");
+    marker_bird_5.bindPopup(custom_bird_5, customPopup);
+
+    /* Marker 6 */
+    var custom_bird_6 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_6 = L.marker([45.835531, 1.241751],{icon:marker_birds}).addTo(map);
-    marker_bird_6.bindPopup("<b>Marker 6</b><br>Hello World !");
+    marker_bird_6.bindPopup(custom_bird_6, customPopup);
+
+    /* Marker 7 */
+    var custom_bird_7 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_7 = L.marker([45.835793, 1.238964],{icon:marker_birds}).addTo(map);
-    marker_bird_7.bindPopup("<b>Marker 7</b><br>Hello World !");
+    marker_bird_7.bindPopup(custom_bird_7, customPopup);
+
+    /* Marker 8 */
+    var custom_bird_8 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_8 = L.marker([45.836212, 1.236158],{icon:marker_birds}).addTo(map);
-    marker_bird_8.bindPopup("<b>Marker 8</b><br>Hello World !");
+    marker_bird_8.bindPopup(custom_bird_8, customPopup);
+
+    /* Marker 9 */
+    var custom_bird_9 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_9 = L.marker([45.838080, 1.235173],{icon:marker_birds}).addTo(map);
-    marker_bird_9.bindPopup("<b>Marker 9</b><br>Hello World !");
+    marker_bird_9.bindPopup(custom_bird_9, customPopup);
+
+    /* Marker 10 */
+    var custom_bird_10 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_10 = L.marker([45.838116, 1.236647],{icon:marker_birds}).addTo(map);
-    marker_bird_10.bindPopup("<b>Marker 10</b><br>Hello World !");
+    marker_bird_10.bindPopup(custom_bird_10, customPopup);
+
+    /* Marker 11 */
+    var custom_bird_11 =
+        "<div class='div_marker'>"+
+        "<h3>Marker 13</h3>"+
+        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
+        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "</button>"+
+        "</div>"
+
     var marker_bird_11 = L.marker([45.838136, 1.238206],{icon:marker_birds}).addTo(map);
-    marker_bird_11.bindPopup("<b>Marker 11</b><br>Hello World !");
+    marker_bird_11.bindPopup(custom_bird_11, customPopup);
+
 
 
 
