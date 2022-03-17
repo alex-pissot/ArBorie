@@ -31,7 +31,12 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Arbres', 'fas fa-tree', Trees::class);
         yield MenuItem::linkToCrud('Animals', 'fas fa-list', Animals::class);
         /*yield MenuItem::linkToCrud('Parcours', 'fas fa-list', Trails::class);*/
-        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-user', User::class);
+
+        yield MenuItem::subMenu('Utilisateur', 'fa fa-users')->setSubItems([
+            MenuItem::linkToCrud('Modifier un utilisateurs', 'fa fa-cog', user::class),
+            MenuItem::linkToRoute('Ajouter un utilisateur', 'fas fa-plus', 'app_register'),
+        ]);
+
 
     }
 }
