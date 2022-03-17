@@ -289,6 +289,45 @@ h1.header-title {
     width: 100%;
 }
 
+.leaflet-container {
+    font-size: 40px !important;
+}
+
+.leaflet-control-layers-list {
+    padding: 0 0.5em !important;
+}
+
+.leaflet-control-layers-selector {
+    bottom: 5px !important;
+    top: unset !important;
+    padding-right: 3px !important;
+    transform: scaleX(1.9) scaleY(1.9) !important;
+    margin-right: 10px !important;
+}
+
+.leaflet-control-layers-toggle {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.leaflet-retina .leaflet-control-layers-toggle {
+    background-size: 60px 60px !important;
+}
+
+.leaflet-control-layers-separator {
+    border-top: 5px solid #ddd !important;
+}
+
+.leaflet-touch .leaflet-bar a {
+    width: 80px !important;
+    height: 80px !important;
+    line-height: 80px !important;
+}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 30px !important;
+}
+
 /* ---- Marker ---- */
 
 .img_marker{
