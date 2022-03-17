@@ -10,6 +10,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 class DashboardController extends AbstractDashboardController
 {
@@ -22,6 +23,7 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
+            ->setTranslationDomain('admin')
             ->setTitle('Arborie');
     }
 
@@ -29,14 +31,15 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Arbres', 'fas fa-tree', Trees::class);
-        yield MenuItem::linkToCrud('Animals', 'fas fa-list', Animals::class);
+        yield MenuItem::linkToCrud('Animaux', 'fas fa-list', Animals::class);
         /*yield MenuItem::linkToCrud('Parcours', 'fas fa-list', Trails::class);*/
 
-        yield MenuItem::subMenu('Utilisateur', 'fa fa-users')->setSubItems([
-            MenuItem::linkToCrud('Modifier un utilisateurs', 'fa fa-cog', user::class),
+        yield MenuItem::subMenu('Utilisateurs', 'fa fa-users')->setSubItems([
+            MenuItem::linkToCrud('Modifier un utilisateur', 'fa fa-cog', user::class),
             MenuItem::linkToRoute('Ajouter un utilisateur', 'fas fa-plus', 'app_register'),
         ]);
 
 
     }
+
 }
