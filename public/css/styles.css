@@ -411,3 +411,23 @@ h1.header-title {
     background-color: #618e2b;
     border: unset;
 }
+/* --- Page login ---*/
+
+.login-title {
+    text-align: center;
+    padding: 3.8em 0;
+}
+.login-title h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.login-form input, .login-form label, .login-form button {
+    font-size: 3em;
+}
+
+.submit-container button {
+    background-color: #618e2b;
+    border: unset;
+    
+}
