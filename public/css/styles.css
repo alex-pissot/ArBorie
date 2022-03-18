@@ -371,3 +371,20 @@ h1.header-title {
 .menu_map{
     width: 250px;
 }
+
+/* --- Form Contact --- */
+
+.contact-form{
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.form-group{
+    margin-top: 0.5em;
+}
+
+.btn-send{
+    margin-top: 2em;
+    text-align: center;
+}
