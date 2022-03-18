@@ -8,7 +8,7 @@
                 <div class="box-tree-info">
                     <h2 class="tree-info-headtitle">{{ tree.name }}</h2>
                     <p class="tree-info-title pb-2 pt-5">Description</p>
-                    <p class="tree-info-text">{{ tree.description }}</p>
+                    <p class="tree-info-text">{{ tree.description | striptags }}</p>
                     <p class="tree-info-title pb-2 pt-5">Année de mise en terre</p>
                     <p class="tree-info-text">{{ tree.plantingYear }}</p>
                     <p class="tree-info-title pb-2 pt-5">Photos</p>

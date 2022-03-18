@@ -17,7 +17,7 @@
                             <a href="{{ path('animals_show', {'id': animal.id}) }}">
                                 <h3>{{ animal.name }}</h3>
                                 <h3>{{ animal.family }}</h3>
-                                <p> {{ animal.description }} </p>
+                                <p> {{ animal.description | striptags | slice(0, 50) }}... </p>
                             </a>
                         </div>
                     </div>

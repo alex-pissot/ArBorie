@@ -211,6 +211,7 @@ h1.header-title {
 }
 .tree-featured-image {
     max-width: 250px;
+    max-height: 190px;
 }
 .trees-show-img {
     max-width: 100%;
@@ -279,6 +280,7 @@ h1.header-title {
 }
 .animal-featured-image {
     max-width: 250px;
+    max-height: 190px;
 }
 .animals-show-img {
     max-width: 100%;
