@@ -233,10 +233,10 @@ $(document).ready(function(){
     /* Marker 0 */
     var custom_bird_0 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Mésange charbonnière</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Mesange-charbonniere.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/2' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -246,10 +246,10 @@ $(document).ready(function(){
     /* Marker 1 */
     var custom_bird_1 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Mésanges bleue</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Mesange_bleue.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/5' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -272,10 +272,10 @@ $(document).ready(function(){
     /* Marker 3 */
     var custom_bird_3 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Pic épeiche</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Pic_epeiche M.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/9' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -285,10 +285,10 @@ $(document).ready(function(){
     /* Marker 4 */
     var custom_bird_4 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Pinson des arbres</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Pinson_des_arbres F.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/6' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -298,10 +298,10 @@ $(document).ready(function(){
     /* Marker 5 */
     var custom_bird_5 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Merle noir</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Merle_noir_M.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/7' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -337,10 +337,10 @@ $(document).ready(function(){
     /* Marker 8 */
     var custom_bird_8 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Pic vert</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Pic_vert.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/8' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -363,10 +363,10 @@ $(document).ready(function(){
     /* Marker 10 */
     var custom_bird_10 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Bergeronnette grise</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Bergeronnette_grise.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/11' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -376,10 +376,10 @@ $(document).ready(function(){
     /* Marker 11 */
     var custom_bird_11 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
+        "<h3>Pigeons biset</h3>"+
+        "<img class='img_marker' src='../assets/img/birds/Pigeon_biset.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/10' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 

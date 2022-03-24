@@ -42,6 +42,7 @@ class Animals
      */
     private $imageFile;
 
+
     /**
      * @ORM\Column(type="datetime")
      * @var DateTime
