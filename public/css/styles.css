@@ -337,6 +337,7 @@ h1.header-title {
 /* ---- Marker ---- */
 
 .img_marker{
+    width: 100%;
     max-width: 450px;
     margin: 1.5em 0.8em 1.2em 0.8em;
 }
@@ -348,9 +349,11 @@ h1.header-title {
 .div_marker{
     text-align: center;
 }
-
-.img_marker{
-    width: 90%;
+.div_marker h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding-top: 1em;
+    margin-right: 2.2em;
 }
 
 .btn_marker{
