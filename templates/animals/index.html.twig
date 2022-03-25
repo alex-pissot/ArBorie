@@ -7,13 +7,13 @@
         <h2 class="page-title">Les oiseaux de La Borie</h2>
             <div class="container-animals">
                 {% for animal in animals %}
-                    <div class="box-animals">
-                        <div class="box-animals-content">
+                    <div class="box-animals row">
+                        <div class="box-animals-content col-4 text-center">
                             <a href="{{ path('animals_show', {'id': animal.id}) }}">
                                 <img class="animal-featured-image" src="{{ vich_uploader_asset(animal,'imageFile') }}">
                             </a>
                         </div>
-                        <div class="box-animals-content">
+                        <div class="box-animals-content col-8">
                             <a href="{{ path('animals_show', {'id': animal.id}) }}">
                                 <h3>{{ animal.name }}</h3>
                                 <h3>{{ animal.family }}</h3>

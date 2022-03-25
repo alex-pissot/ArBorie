@@ -169,12 +169,11 @@ h1.header-title {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.box-trees-content {
-    padding: 0 2em;
-}
+
 .box-trees-content p {
     font-size: 2em;
 }
+
 .box-trees h3 {
     color: #618e2b;
     font-size: 3.3em;
@@ -212,6 +211,7 @@ h1.header-title {
 .tree-featured-image {
     max-width: 250px;
     max-height: 190px;
+    margin: 0 auto;
 }
 .trees-show-img {
     max-width: 100%;
@@ -237,9 +237,6 @@ h1.header-title {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.box-animals-content {
-    padding: 0 2em;
 }
 .box-animals-content p {
     font-size: 2em;
@@ -339,6 +336,7 @@ h1.header-title {
 .img_marker{
     width: 100%;
     max-width: 450px;
+    max-height: 500px;
     margin: 1.5em 0.8em 1.2em 0.8em;
 }
 

@@ -49,11 +49,8 @@ $(document).ready(function(){
     /* Marker 0 */
     var custom0 =
         "<div class='div_marker'>"+
-        "<h3>Marker 0</h3>"+
+        "<h3>Départ</h3>"+
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
-        "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
-        "</button>"+
         "</div>"
 
     var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_trees}).addTo(map);
@@ -62,10 +59,10 @@ $(document).ready(function(){
     /* Marker 1 */
     var custom1 =
         "<div class='div_marker'>"+
-        "<h3>Marker 1</h3>"+
+        "<h3>Lorem ipsum</h3>"+
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/7' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -75,10 +72,10 @@ $(document).ready(function(){
     /* Marker 2 */
     var custom2 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Des chênes différents</h3>"+
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/6' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -88,10 +85,10 @@ $(document).ready(function(){
     /* Marker 3 */
     var custom3 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Lorem ipsum</h3>"+
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/8' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -101,10 +98,10 @@ $(document).ready(function(){
     /* Marker 4 */
     var custom4 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>La vie dans les arbres morts</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/8.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/9' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -114,10 +111,10 @@ $(document).ready(function(){
     /* Marker 5 */
     var custom5 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Un chêne majestueux</h3>"+
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/10' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -127,10 +124,10 @@ $(document).ready(function(){
     /* Marker 6 */
     var custom6 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Le lierre</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/12.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/11' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -140,10 +137,10 @@ $(document).ready(function(){
     /* Marker 7 */
     var custom7 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Lorem ipsum</h3>"+
         "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/12' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -153,10 +150,10 @@ $(document).ready(function(){
     /* Marker 8 */
     var custom8 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Le Séquoia géant</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/19.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/13' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -166,10 +163,10 @@ $(document).ready(function(){
     /* Marker 9 */
     var custom9 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Le fameux hêtre</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/23.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/14' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -179,10 +176,10 @@ $(document).ready(function(){
     /* Marker 10 */
     var custom10 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Le charme</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/24.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/15' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -192,10 +189,10 @@ $(document).ready(function(){
     /* Marker 11 */
     var custom11 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Le platane</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/25.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/16' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -205,10 +202,10 @@ $(document).ready(function(){
     /* Marker 12 */
     var custom12 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Le peuplier</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/27.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/17' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -218,10 +215,10 @@ $(document).ready(function(){
     /* Marker 13 */
     var custom13 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
+        "<h3>Cadeaux de la nature</h3>"+
+        "<img class='img_marker' src='../assets/img/trees/38.jpg' alt='Image arbre'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/trees/18' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 

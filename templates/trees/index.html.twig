@@ -7,16 +7,16 @@
         <h2 class="page-title">Les arbres de La Borie</h2>
             <div class="container-trees">
                 {% for tree in trees %}
-                    <div class="box-trees">
-                        <div class="box-trees-content">
+                    <div class="box-trees row">
+                        <div class="box-trees-content col-4 text-center">
                             <a href="{{ path('trees_show', {'id': tree.id}) }}">
                                 <img class="tree-featured-image" src="{{ vich_uploader_asset(tree,'imageFile') }}">
                             </a>
                         </div>
-                        <div class="box-trees-content">
+                        <div class="box-trees-content col-8">
                             <a href="{{ path('trees_show', {'id': tree.id}) }}">
                                 <h3>{{ tree.name }}</h3>
-                                <p> {{ tree.description | striptags | slice(0, 50) }}... </p>
+                                <p class="text-justify"> {{ tree.description | striptags | slice(0, 50) }}... </p>
                             </a>
                         </div>
                     </div>
