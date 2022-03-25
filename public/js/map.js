@@ -47,14 +47,9 @@ $(document).ready(function(){
     /* ----- Marker trees map ----- */
 
     /* Marker 0 */
-    var custom0 =
-        "<div class='div_marker'>"+
-        "<h3>Départ</h3>"+
-        "<img class='img_marker' src='../assets/img/arbre.png' alt='Image arbre'/>" +
-        "</div>"
 
-    var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_trees}).addTo(map);
-    marker_0.bindPopup(custom0, customPopup);
+    var marker_0 = L.marker([45.835811, 1.237481],{icon:marker_parking}).addTo(map);
+    marker_0.bindPopup(customPopup);
 
     /* Marker 1 */
     var custom1 =
