@@ -233,7 +233,7 @@ $(document).ready(function(){
         "<h3>Mésange charbonnière</h3>"+
         "<img class='img_marker' src='../assets/img/birds/Mesange-charbonniere.jpg' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/animals/2' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/16' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -256,10 +256,10 @@ $(document).ready(function(){
     /* Marker 2 */
     var custom_bird_2 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Rougegorge familier</h3>"+
         "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/12' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -308,10 +308,10 @@ $(document).ready(function(){
     /* Marker 6 */
     var custom_bird_6 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Etourneau sansonnet</h3>"+
         "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/13' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -321,10 +321,10 @@ $(document).ready(function(){
     /* Marker 7 */
     var custom_bird_7 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Geai des chênes</h3>"+
         "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/14' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 
@@ -347,10 +347,10 @@ $(document).ready(function(){
     /* Marker 9 */
     var custom_bird_9 =
         "<div class='div_marker'>"+
-        "<h3>Marker 13</h3>"+
+        "<h3>Pie bavarde</h3>"+
         "<img class='img_marker' src='../assets/img/bird_icon.png' alt='Image oiseau'/>" +
         "<button type='button' class='btn_marker btn-dark btn-lg btn-block'>" +
-        "<a href='http://localhost:8000/trees/1' target='_blank'>En savoir plus...</a>" +
+        "<a href='http://localhost:8000/animals/15' target='_blank'>En savoir plus...</a>" +
         "</button>"+
         "</div>"
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 25 mars 2022 à 12:01
--- Version du serveur :  5.7.31
--- Version de PHP : 7.3.21
+-- Généré le : ven. 25 mars 2022 à 12:50
+-- Version du serveur : 5.7.36
+-- Version de PHP : 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,21 +39,25 @@ CREATE TABLE IF NOT EXISTS `animals` (
   `image_3` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image_4` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `animals`
 --
 
 INSERT INTO `animals` (`id`, `name`, `family`, `trees_associed`, `description`, `image`, `image_2`, `image_3`, `image_4`) VALUES
-(2, 'Mésange charbonnière', 'famille des Paridés', NULL, '<div>La plus grosse des mésanges, qui revêt sur sa poitrine une longue barre noire allant de la gorge à la queue. Si cette barre est large, vous avez probablement affaire à un mâle. Si elle est toute fine, ce sera plutôt une femelle. Il faut aussi noter son chant entrainant, avec des airs de musique samba.</div>', 'Kohlmeise073b_0.jpg', 'mesange.charbonniere.mafa.26g.jpg', 'mesange-charbonniere-094012.jpg', NULL),
 (5, 'Mésanges bleue', 'famille', NULL, '<div>C’est la plus acrobate des trois mésanges présentées, qui n’hésite pas à s’accrocher tête en bas pour trouver des insectes en bout de branche. Son plumage bleu est des plus intense juste après une mue.&nbsp;</div>', 'Mésange bleue.jpg', NULL, NULL, NULL),
 (6, 'Pinson des arbres', 'famille', NULL, '<div>Très rarement solitaire, le pinson des arbres porte assez bien son nom, bien qu’on puisse le trouver aussi à terre. Le mâle est un grand chanteur, arborant un plumage brun rouille sur le ventre et une calotte (dessus de la tête) grise. &nbsp;</div>', 'Pinson des arbres F.jpg', 'Pinson des arbres M.JPG', NULL, NULL),
 (7, 'Merle noir', 'famille', NULL, '<div>Le merle noir adore fouiller le sol et les feuilles mortes en quête de nourriture. Sa queue très souvent relevée l’habille d’une attitude volontaire, qui donne à ce gros passereau, discret dans les couleurs, une certaine allure lui permettant d’attirer l’œil. &nbsp;</div>', 'Merle noir M.jpg', 'Merle noir F.jpg', NULL, NULL),
 (8, 'Pic vert', 'famille', NULL, '<div>Ce pic aime passer du temps au sol. Mais pour espérer l’apercevoir à terre, il faudra être particulièrement discret et attentif, car c’est un oiseau extrêmement craintif avec un plumage vert adapté au camouflage dans l’herbe. &nbsp;</div>', 'Pic vert.jpg', NULL, NULL, NULL),
 (9, 'Pic épeiche', 'famille', NULL, '<div>Au contraire du premier, ce pic adore rester au sommet des arbres, bien camouflé dans le feuillage et toujours du mauvais côté, pour être bien observé, de la branche sur laquelle il se tient.&nbsp;</div>', 'Pic épeiche M.jpg', NULL, NULL, NULL),
 (10, 'Pigeons biset', 'famille', NULL, '<div>La palette de plumage pour le pigeon biset est extrêmement variée et peut parfaitement aller du gris foncé au blanc, avec une multitude de nuances.&nbsp;</div>', 'Pigeon biset.jpg', NULL, NULL, NULL),
-(11, 'Bergeronnette grise', 'famille', NULL, '<div>Comme toute les bergeronnettes, on la repère assez facilement de par sa forte tendance à hocher sa longue queue. Elle est aussi à l’aise sur un toit qu’à terre. &nbsp;</div>', 'Bergeronnette grise.jpg', NULL, NULL, NULL);
+(11, 'Bergeronnette grise', 'famille', NULL, '<div>Comme toute les bergeronnettes, on la repère assez facilement de par sa forte tendance à hocher sa longue queue. Elle est aussi à l’aise sur un toit qu’à terre. &nbsp;</div>', 'Bergeronnette grise.jpg', NULL, NULL, NULL),
+(12, 'Rougegorge familier', 'Lorem ipsum', NULL, '<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales molestie sem, vel varius quam auctor nec. Vivamus lacinia enim eget est pharetra dignissim. Curabitur pharetra eget lorem sit amet dictum. Maecenas sem sem, pretium scelerisque libero quis, consectetur tempor leo. Vivamus id tellus lectus. Curabitur vehicula purus varius tellus facilisis elementum. Duis lacinia mauris lorem, sed sollicitudin nunc suscipit id. Pellentesque vel lobortis enim. Suspendisse congue sodales maximus. Sed odio lectus, interdum vitae tellus sed, tempus condimentum nunc. Donec at magna ac orci mollis ultricies sit amet a libero. Praesent non tortor sit amet quam aliquam ultricies. Morbi non odio in metus vehicula gravida ut a ante. Nunc sit amet efficitur.</div>', 'bird.png', NULL, NULL, NULL),
+(13, 'Etourneau sansonnet', 'Lorem ipsum', NULL, '<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales molestie sem, vel varius quam auctor nec. Vivamus lacinia enim eget est pharetra dignissim. Curabitur pharetra eget lorem sit amet dictum. Maecenas sem sem, pretium scelerisque libero quis, consectetur tempor leo. Vivamus id tellus lectus. Curabitur vehicula purus varius tellus facilisis elementum. Duis lacinia mauris lorem, sed sollicitudin nunc suscipit id. Pellentesque vel lobortis enim. Suspendisse congue sodales maximus. Sed odio lectus, interdum vitae tellus sed, tempus condimentum nunc. Donec at magna ac orci mollis ultricies sit amet a libero. Praesent non tortor sit amet quam aliquam ultricies. Morbi non odio in metus vehicula gravida ut a ante. Nunc sit amet efficitur</div>', 'bird.png', NULL, NULL, NULL),
+(14, 'Geai des chênes', 'Lorem ipsum', NULL, '<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales molestie sem, vel varius quam auctor nec. Vivamus lacinia enim eget est pharetra dignissim. Curabitur pharetra eget lorem sit amet dictum. Maecenas sem sem, pretium scelerisque libero quis, consectetur tempor leo. Vivamus id tellus lectus. Curabitur vehicula purus varius tellus facilisis elementum. Duis lacinia mauris lorem, sed sollicitudin nunc suscipit id. Pellentesque vel lobortis enim. Suspendisse congue sodales maximus. Sed odio lectus, interdum vitae tellus sed, tempus condimentum nunc. Donec at magna ac orci mollis ultricies sit amet a libero. Praesent non tortor sit amet quam aliquam ultricies. Morbi non odio in metus vehicula gravida ut a ante. Nunc sit amet efficitur</div>', 'bird.png', NULL, NULL, NULL),
+(15, 'Pie bavarde', 'Lorem ipsum', NULL, '<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales molestie sem, vel varius quam auctor nec. Vivamus lacinia enim eget est pharetra dignissim. Curabitur pharetra eget lorem sit amet dictum. Maecenas sem sem, pretium scelerisque libero quis, consectetur tempor leo. Vivamus id tellus lectus. Curabitur vehicula purus varius tellus facilisis elementum. Duis lacinia mauris lorem, sed sollicitudin nunc suscipit id. Pellentesque vel lobortis enim. Suspendisse congue sodales maximus. Sed odio lectus, interdum vitae tellus sed, tempus condimentum nunc. Donec at magna ac orci mollis ultricies sit amet a libero. Praesent non tortor sit amet quam aliquam ultricies. Morbi non odio in metus vehicula gravida ut a ante. Nunc sit amet efficitur</div>', 'bird.png', NULL, NULL, NULL),
+(16, 'Mésange charbonnière', 'famille des Paridés', NULL, '<div>La plus grosse des mésanges, qui revêt sur sa poitrine une longue barre noire allant de la gorge à la queue. Si cette barre est large, vous avez probablement affaire à un mâle. Si elle est toute fine, ce sera plutôt une femelle. Il faut aussi noter son chant entrainant, avec des airs de musique samba.</div>', 'Mésange charbonnière.jpg', 'Mésange_charbonnière_2.jpg', 'Mésange charbonnière_3.jpg', NULL);
 
 -- --------------------------------------------------------
 
